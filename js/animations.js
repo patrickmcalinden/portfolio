@@ -288,7 +288,7 @@ ScrollTrigger.matchMedia({
             scrollTrigger: {
                 trigger: 'transition4',
                 start: "3200 center",
-                markers: true,
+                
             },
             y: 50,
             opacity: 0,
@@ -335,7 +335,7 @@ ScrollTrigger.matchMedia({
             scrollTrigger: {
                 trigger: 'transition4',
                 start: "3100 center",
-                markers: true,
+                
             },
             y: 50,
             opacity: 0,
@@ -382,7 +382,7 @@ ScrollTrigger.matchMedia({
             scrollTrigger: {
                 trigger: 'transition4',
                 start: "3250 center",
-                markers: true,
+               
             },
             y: 50,
             opacity: 0,
@@ -429,7 +429,6 @@ ScrollTrigger.matchMedia({
             scrollTrigger: {
                 trigger: 'transition4',
                 start: "3350 center",
-                markers: true,
             },
             y: 50,
             opacity: 0,
@@ -476,7 +475,6 @@ ScrollTrigger.matchMedia({
             scrollTrigger: {
                 trigger: 'transition4',
                 start: "3650 center",
-                markers: true,
             },
             y: 50,
             opacity: 0,
@@ -512,7 +510,7 @@ ScrollTrigger.matchMedia({
         gsap.from(".transition3" , {
             scrollTrigger: {
                 trigger: 'transition3',
-                start: "bottom center",
+                start: "1400 center",
             },
             y: 50,
             opacity: 0,
@@ -523,7 +521,7 @@ ScrollTrigger.matchMedia({
             scrollTrigger: {
                 trigger: 'transition4',
                 start: "3675 center",
-                markers: true,
+                
             },
             y: 50,
             opacity: 0,
