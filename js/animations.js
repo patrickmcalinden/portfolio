@@ -245,7 +245,8 @@ ScrollTrigger.matchMedia({
             y: 20,
             opacity: 0,
             duration: 0.6,
-            stagger: .3
+            stagger: .3,    
+            markers: true
          })
     },
     "(min-width: 800px) and (max-width: 949px)" : function()
