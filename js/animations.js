@@ -240,9 +240,9 @@ ScrollTrigger.matchMedia({
         gsap.from(".transition4" , {
             scrollTrigger: {
                 trigger: 'transition4',
-                start: "3200 center",
+                start: "3100 center",
             },
-            y: 50,
+            y: 20,
             opacity: 0,
             duration: 0.6,
             stagger: .3
