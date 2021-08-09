@@ -915,4 +915,14 @@ footer a {
     width: 25px;
   }
 }
+
+@media only screen and (max-width: 850px) and (max-height: 560px) {
+  .main .content {
+    font-size: .55em;
+  }
+  .scroll {
+    height: 22px;
+    width: 22px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
