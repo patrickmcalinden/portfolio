@@ -241,7 +241,6 @@ ScrollTrigger.matchMedia({
             scrollTrigger: {
                 trigger: 'transition4',
                 start: "3200 center",
-                markers: true,
             },
             y: 50,
             opacity: 0,
