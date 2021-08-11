@@ -1,7 +1,7 @@
 const form = document.querySelector("form")
 
 form.onsubmit =(e) =>{
-    let xhr = new XMLHttpequest();
+    let xhr = new XMLHttprequest();
     xhr.open("POST", "message.php", true);
     xhr.onload = ()=>{
         if(xhr.readyState== 4 && xhr.status == 200){
