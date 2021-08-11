@@ -12,7 +12,7 @@ if (isset($_POST['sumbit'])){
     $txt = "You got an email form".$name.".\n\n".$message;
 
     mail($mailto, $subject, $txt, $headers);
-    header("Location: index/email-sent");
+    header("Location: index.html?email-sent");
 
 }
 
