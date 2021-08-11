@@ -10,7 +10,7 @@ if(!empty($email) && !empty($message)){
     if(filter_var($email, FILTER_VALIDATE_EMAIL)){
         $reciever = "patrickmcalinden226@gmail.com";
         $subject = "From: $name <$email>";
-        $body = "Name: $name\nEmail: $email\nPhonenumbwr: $phonenumber\n\nMessage: $message";
+        $body = "Name: $name\nEmail: $email\nPhonenumber: $phonenumber\n\nMessage: $message";
         $sender = "From: $email";
         if(mail($reciever, $subject, $body, $sender)){
             echo "Message sent!";
