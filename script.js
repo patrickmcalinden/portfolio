@@ -1,13 +1,12 @@
 const form = document.querySelector("form");
 
-
 form,onsubmit = (e) =>{
     e.preventDefault();
     
-    var xhr = new XMLHttpRequest();
+    let xhr = new XMLHttpRequest();
 
     xhr.open("POST", "message.php", true);
-    xhr.onload = function() {
+    xhr.onload = ()=>{
         if(xhr.readyState== 4 && xhr.status == 200){
             let response = xhr.response;
             if(repsone.indexOf("Email and Message fields need to be filled") != -1 || response.indexOf("Enter a valid Email!") != -1 || response.indexOf("Failed to sened message!")){
