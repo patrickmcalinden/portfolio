@@ -3,7 +3,7 @@
 $name = $_POST['name'];
 $email = $_POST['email'];
 $phonenumber = $_POST['phonenumber'];
-$body = $_POST['message'];
+$message = $_POST['message'];
 
 
 if(!empty($email) && !empty($message)){
