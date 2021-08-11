@@ -13,7 +13,9 @@ form,onsubmit = (e) =>{
             if(repsone.indexOf("Email and Message fields need to be filled") != -1 || response.indexOf("Enter a valid Email!") != -1 || response.indexOf("Failed to sened message!")){
             }else{
                 form.reset();
-                setTimeout(3000);
+                setTimeout(()=>{
+
+                },3000);
         }            
 
         }
