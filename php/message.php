@@ -1,9 +1,9 @@
 <?php
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$phone = $_POST['phonen'];
-$message = $_POST['message'];
+$name = $_POST['contact-name'];
+$email = $_POST['contact-email'];
+$phone = $_POST['contact-phonen'];
+$message = $_POST['contact-message'];
 
 
 if(!empty($email) && !empty($message)){
