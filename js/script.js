@@ -3,8 +3,8 @@ const form = document.querySelector("form")
 form.onsubmit = (e) =>{
 
     
-    let xhr = new XMLHttpRequest();
-    
+    var xhr = new XMLHttpRequest();
+
     xhr.open("POST", "message.php", true);
     xhr.onload = ()=>{
         if(xhr.readyState== 4 && xhr.status == 200){
