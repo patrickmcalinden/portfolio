@@ -2,7 +2,7 @@ const form = document.querySelector("form"),
 
 
 form,onsubmit = (e) =>{
-
+    e.preventDefault();
     
     let xhr = new XMLHttpRequest();
 
