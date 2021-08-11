@@ -21,6 +21,6 @@ if(!empty($email) && !empty($message)){
         echo "Enter a valid Email!";
     }
 }else{
-    echo "Email and Message fields need to be filled";
+    echo "Email and Message fields are required!";
 }
 ?>
