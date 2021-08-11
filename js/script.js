@@ -1,7 +1,7 @@
 const form = document.querySelector("form"),
 
 
-form,onsubmit = (e) =>{
+form.onsubmit = (e) =>{
 
     
     let xhr = new XMLHttpRequest();
