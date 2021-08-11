@@ -15,7 +15,8 @@ form,onsubmit = (e) =>{
                 setTimeout(()=>{
 
                 },3000);
-        }            
+        }   
+        form.classList.remove("disabled");         
 
         }
     }
