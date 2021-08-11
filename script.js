@@ -9,7 +9,7 @@ form.onsubmit = (e)=>{
   form.classList.add("disabled");
   var xhr = new XMLHttpRequest();
   xhr.open("POST", "message.php", true);
-  xhr.onload = ()=>{
+  xhr.onload = function(){
     if(xhr.readyState == 4 && xhr.status == 200){
       let response = xhr.response;
       if(response.indexOf("required") != -1 || response.indexOf("valid") != -1 || response.indexOf("failed") != -1){
