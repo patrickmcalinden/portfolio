@@ -1,9 +1,9 @@
-const form = document.querySelector("form"),
-statusTxt = form.querySelector(".button-area span");
+const form = document.querySelector("form");
+
 form.onsubmit = (e)=>{
   e.preventDefault();
 
-  statusTxt.innerText = "Sending your message...";
+  
   form.classList.add("disabled");
   let xhr = new XMLHttpRequest();
   xhr.open("POST", "message.php", true);
@@ -18,7 +18,7 @@ form.onsubmit = (e)=>{
           
         }, 3000);
       }
-      statusTxt.innerText = response;
+      
       form.classList.remove("disabled");
     }
   }
