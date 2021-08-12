@@ -1,23 +1,15 @@
 <?php
-    ini_set( 'display_errors', 1 );
-    error_reporting( E_ALL );
+    $userName = $_POST['contact-name'];
+    $userEmail = $_POST['contact-email'];
+    $userPhone = $_POST['contact-phone'];
+    $message = $_POST['contact-message'];
 
-    if (isset($_POST['sumbit'])){
-        $name = $_POST['contact-name'];
-        $email = $_POST['contact-email'];
-        $phone = $_POST['contact-phone'];
-        $message = $_POST['contact-message'];
+    $to = "patrickmcalinden226@gmail.com";
+    $body = "";
 
+    $body .= "From: ".$userName. "\r\n";
+    $body .= "Email: ".$userEmail. "\r\n";
+    $body .= "Message: ".$message. "\r\n";
 
-        $to = "patrickmcalinden226@gmail.com";
-        $from = $email;
-        $subject = "Resume reachout";
-        $message = $message;
-        $headers = "From:" . $from;
-            if(mail($to,$subject,$message, $headers)) {
-		        echo "The email message was sent.";
-            } else {
-    	        echo "The email message was not sent.";
-
-            }
+    mail($to,"New Email",$body);
 ?>
