@@ -19,6 +19,6 @@
       echo "Enter a valid email address!";
     }
   }else{
-    echo "Email and message field is required!";
+    echo "Email and message fields is required!";
   }
 ?>
