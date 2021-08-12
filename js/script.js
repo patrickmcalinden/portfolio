@@ -16,7 +16,6 @@ form.onsubmit = (e)=>{
           
         }, 3000);
       }
-      statusTxt.innerText = response;
       form.classList.remove("disabled");
     }
   }
