@@ -3,7 +3,7 @@ const form = document.querySelector("form"),
 statusTxt = form.querySelector(".button span");
 form.onsubmit = (e)=>{
   e.preventDefault();
-  statusTxt.style.color = "#0dfde9";
+  statusTxt.style.color = "#0dfde8";
   statusTxt.style.display = "block";
   statusTxt.innerText = "Sending your message...";
   form.classList.add("disabled");
