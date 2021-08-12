@@ -19,5 +19,5 @@
             } else {
     	        echo "The email message was not sent.";
 
-}
+            }
 ?>
