@@ -1,6 +1,5 @@
 //Contact Form in PHP
-const form = document.querySelector("form"),
-statusTxt = form.querySelector(".status");
+const form = document.querySelector("form");
 form.onsubmit = (e)=>{
   e.preventDefault();
   form.classList.add("disabled");
