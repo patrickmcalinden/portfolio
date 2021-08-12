@@ -1,11 +1,11 @@
 //Contact Form in PHP
 const form = document.querySelector("form"),
-statusTxt = form.querySelector(".button span");
+statusTxt = document.querySelector(".button span");
 form.onsubmit = (e)=>{
   e.preventDefault();
   statusTxt.style.color = "green";
   statusTxt.style.display = "block";
-  statusTxt.innerText = "Sending your message...";
+  statusTxt.innerText = "Sending...";
   form.classList.add("disabled");
 
   let xhr = new XMLHttpRequest();
