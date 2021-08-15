@@ -36,10 +36,9 @@ form.onsubmit = (e)=>{
         form.reset();
         contactEmail.style.border = "0px solid black";
         contactMessage.style.border = "0px solid black";
-        statusTxt.innerText = "Sent!";
         setTimeout(()=>{
           statusTxt.innerText = "Send";
-        }, 2500);
+        }, 3000);
       }
       statusTxt.innerText = "Error!";
       form.classList.remove("disabled");
