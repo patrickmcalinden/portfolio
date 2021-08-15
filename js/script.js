@@ -22,26 +22,24 @@ form.onsubmit = (e)=>{
       let response = xhr.response;
       if(response.indexOf("required") != -1 || response.indexOf("valid") != -1 || response.indexOf("failed") != -1){
         statusTxt.style.color = "#CFF1C8";
+        statusTxt.innerText = "Error";
         if(response.indexOf("required") != -1){
           contactEmail.style.border = "1px solid red";
           contactMessage.style.border = "1px solid red";
-          statusTxt.innerText = "Error!";
         }
         if(response.indexOf("valid") != -1){
           contactEmail.style.border = "1px solid red";
           contactMessage.style.border = "0px solid black";
-          statusTxt.innerText = "Error!";
         }
       }else{
         form.reset();
         contactEmail.style.border = "0px solid black";
         contactMessage.style.border = "0px solid black";
-        statusTxt.innerText = "Error!";
         setTimeout(()=>{
           statusTxt.innerText = "Send";
         }, 3000);
       }
-      statusTxt.innerText = "Sent!";
+      statusTxt.innerText = "Sent";
       form.classList.remove("disabled");
     }
   }
