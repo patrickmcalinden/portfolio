@@ -33,8 +33,10 @@ form.onsubmit = (e)=>{
         }
       }else{
         form.reset();
+        contactEmail.style.border = "0px solid black";
+        contactMessage.style.border = "0px solid black";
         setTimeout(()=>{
-          statusTxt.style.display = "none";
+          statusTxt.innerText = "Send";
         }, 3000);
       }
       statusTxt.innerText = "Error!";
