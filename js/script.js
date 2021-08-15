@@ -47,7 +47,7 @@ form.onsubmit = (e)=>{
       if(response.indexOf("failed") != -1){
         statusTxt.innerText = "Error";
       }else{
-        statusTxt.innerText = "Sent";
+        statusTxt.innerText = "dddnt";
       }
       form.classList.remove("disabled");
     }
