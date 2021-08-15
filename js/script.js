@@ -4,9 +4,7 @@ statusTxt = document.querySelector(".button span");
 contactName = form.querySelector(".name")
 contactEmail = form.querySelector(".email")
 contactMessage = document.querySelector(".email-message")
-console.log(form)
-console.log(contactEmail)
-console.log(contactMessage)
+
 
 
 form.onsubmit = (e)=>{
@@ -27,20 +25,23 @@ form.onsubmit = (e)=>{
         if(response.indexOf("required") != -1){
           contactEmail.style.border = "1px solid red";
           contactMessage.style.border = "1px solid red";
+          statusTxt.innerText = "Error!";
         }
         if(response.indexOf("valid") != -1){
           contactEmail.style.border = "1px solid red";
           contactMessage.style.border = "0px solid black";
+          statusTxt.innerText = "Error!";
         }
       }else{
         form.reset();
         contactEmail.style.border = "0px solid black";
         contactMessage.style.border = "0px solid black";
+        statusTxt.innerText = "Error!";
         setTimeout(()=>{
           statusTxt.innerText = "Send";
         }, 3000);
       }
-      statusTxt.innerText = "Error!";
+      statusTxt.innerText = "Sent!";
       form.classList.remove("disabled");
     }
   }
