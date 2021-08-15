@@ -1,9 +1,9 @@
 //Contact Form in PHP
 const form = document.querySelector("form"),
 statusTxt = document.querySelector(".button span");
-contactName = form.querySelector("name")
-contactEmail = form.querySelector("email")
-contactMessage = form.querySelector("message")
+contactName = form.querySelector(".name")
+contactEmail = form.querySelector(".email")
+contactMessage = form.querySelector(".message")
 console.log(form)
 console.log(contactEmail)
 console.log(contactMessage)
