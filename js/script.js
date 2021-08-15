@@ -22,7 +22,6 @@ form.onsubmit = (e)=>{
       let response = xhr.response;
       if(response.indexOf("required") != -1 || response.indexOf("valid") != -1 || response.indexOf("failed") != -1){
         statusTxt.style.color = "#CFF1C8";
-        statusTxt.innerText = "Error";
         if(response.indexOf("required") != -1){
           contactEmail.style.border = "1px solid red";
           contactMessage.style.border = "1px solid red";
@@ -39,7 +38,14 @@ form.onsubmit = (e)=>{
           statusTxt.innerText = "Send";
         }, 3000);
       }
-      statusTxt.innerText = "Sent";
+      if(response.indexOf("required") != -1){
+        statusTxt.innerText = "Error"
+      }
+      if(response.indexOf("valid") != -1){
+        statusTxt.innerText = "Error"
+      }else{
+        statusTxt.innerText = "Sent"
+      }
       form.classList.remove("disabled");
     }
   }
