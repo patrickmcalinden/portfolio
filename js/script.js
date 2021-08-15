@@ -22,14 +22,11 @@ form.onsubmit = (e)=>{
       if(response.indexOf("required") != -1 || response.indexOf("valid") != -1 || response.indexOf("failed") != -1){
         statusTxt.style.color = "#CFF1C8";
         if(response.indexOf("required") != -1){
-          contactEmail.style.color = "red";
-          contactMessage.style.color = "red";
-          contactEmail.style.border = "1px solid";
-          contactMessage.style.border = "1px solid";
+          contactEmail.style.border = "1px solid red";
+          contactMessage.style.border = "1px solid red";
         }
         if(response.indexOf("valid") != -1){
-          contactEmail.style.color = "red";
-          contactEmail.style.border = "1px solid";
+          contactEmail.style.border = "1px solid red";
         }
       }else{
         form.reset();
