@@ -4,7 +4,7 @@ statusTxt = document.querySelector(".button span");
 contactName = form.querySelector("name")
 contactEmail = form.querySelector("email")
 contactMessage = form.querySelector("message")
-console.log(contactName)
+console.log(form)
 console.log(contactEmail)
 console.log(contactMessage)
 
