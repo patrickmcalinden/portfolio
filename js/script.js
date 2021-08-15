@@ -39,12 +39,15 @@ form.onsubmit = (e)=>{
         }, 3000);
       }
       if(response.indexOf("required") != -1){
-        statusTxt.innerText = "Error"
+        statusTxt.innerText = "Error";
       }
       if(response.indexOf("valid") != -1){
-        statusTxt.innerText = "Error"
+        statusTxt.innerText = "Error";
+      }
+      if(response.indexOf("failed") != -1){
+        statusTxt.innerText = "Error";
       }else{
-        statusTxt.innerText = "Sent"
+        statusTxt.innerText = "Sent";
       }
       form.classList.remove("disabled");
     }
