@@ -4,7 +4,7 @@ statusTxt = document.querySelector(".button span");
 
 form.onsubmit = (e)=>{
   e.preventDefault();
-  statusTxt.style.color = "white";
+  statusTxt.style.color = "#CFF1C8";
   statusTxt.style.display = "block";
   statusTxt.innerText = "Sending...";
   form.classList.add("disabled");
