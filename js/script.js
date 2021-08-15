@@ -3,7 +3,7 @@ const form = document.querySelector("form"),
 statusTxt = document.querySelector(".button span");
 contactName = form.querySelector(".name")
 contactEmail = form.querySelector(".email")
-contactMessage = document.querySelector(".message")
+contactMessage = document.querySelector(".email-message")
 console.log(form)
 console.log(contactEmail)
 console.log(contactMessage)
