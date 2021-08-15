@@ -1,6 +1,10 @@
 //Contact Form in PHP
 const form = document.querySelector("form"),
 statusTxt = document.querySelector(".button span");
+contactName = form.querySelector("name")
+contactEmail = form.querySelector("email")
+contactMessage = form.querySelector("message")
+
 
 form.onsubmit = (e)=>{
   e.preventDefault();
@@ -16,14 +20,24 @@ form.onsubmit = (e)=>{
     if(xhr.readyState == 4 && xhr.status == 200){
       let response = xhr.response;
       if(response.indexOf("required") != -1 || response.indexOf("valid") != -1 || response.indexOf("failed") != -1){
-        statusTxt.style.color = "red";
+        statusTxt.style.color = "#CFF1C8";
+        if(response.indexOf("required") != -1){
+          contactEmail.style.color = "red";
+          contactMessage.style.color = "red";
+          contactEmail.style.border = "1px solid";
+          contactMessage.style.border = "1px solid";
+        }
+        if(response.indexOf("valid") != -1){
+          contactEmail.style.color = "red";
+          contactEmail.style.border = "1px solid";
+        }
       }else{
         form.reset();
         setTimeout(()=>{
           statusTxt.style.display = "none";
         }, 3000);
       }
-      statusTxt.innerText = response;
+      statusTxt.innerText = "Error!";
       form.classList.remove("disabled");
     }
   }

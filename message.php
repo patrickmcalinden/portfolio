@@ -1,4 +1,3 @@
-//Contact Form in PHP
 <?php
   $name = htmlspecialchars($_POST['contact-name']);
   $email = htmlspecialchars($_POST['contact-email']);
@@ -7,7 +6,7 @@
 
   if(!empty($email) && !empty($message)){
     if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-      $receiver = "patrickmcalinden226@gmail.com"; //enter that email address where you want to receive all messages
+      $receiver = "patrickmcalinden226@gmail.com";
       $subject = "From: $name <$email>";
       $body = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message\n\nRegards,\n$name";
       $sender = "From: $email";
