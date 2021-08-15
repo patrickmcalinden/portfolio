@@ -30,6 +30,7 @@ form.onsubmit = (e)=>{
         }
         if(response.indexOf("valid") != -1){
           contactEmail.style.border = "1px solid red";
+          contactMessage.style.border = "0px solid black";
         }
       }else{
         form.reset();
