@@ -1,4 +1,3 @@
-//Contact Form in PHP
 const form = document.querySelector("form"),
 statusTxt = document.querySelector(".button span");
 contactName = form.querySelector(".name")
@@ -39,7 +38,7 @@ form.onsubmit = (e)=>{
         statusTxt.innerText = "Sent";
         setTimeout(()=>{
           statusTxt.innerText = "Send";
-        }, 3000);
+        }, 2500);
       }
       form.classList.remove("disabled");
     }
