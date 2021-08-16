@@ -8,7 +8,7 @@
     if(filter_var($email, FILTER_VALIDATE_EMAIL)){
       $receiver = "patrickmcalinden226@gmail.com";
       $subject = "From: $name <$email>";
-      $body = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message\n\nRegards,\n$name";
+      $body = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message";
       $sender = "From: $email";
       if(mail($receiver, $subject, $body, $sender)){
          echo "Sent";
