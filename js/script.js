@@ -35,7 +35,8 @@ form.onsubmit = (e)=>{
       }else{
         form.reset();
         contactEmail.style.border = "0px solid black";
-        contactMessage.style.border = "0px solid black";
+        contactMessage.sty
+        statusTxt.innerText = "Sent";
         setTimeout(()=>{
           statusTxt.innerText = "Send";
         }, 3000);
