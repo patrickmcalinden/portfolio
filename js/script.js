@@ -25,10 +25,12 @@ form.onsubmit = (e)=>{
         if(response.indexOf("required") != -1){
           contactEmail.style.border = "1px solid red";
           contactMessage.style.border = "1px solid red";
+          statusTxt.innerText = "Error";
         }
         if(response.indexOf("valid") != -1){
           contactEmail.style.border = "1px solid red";
           contactMessage.style.border = "0px solid black";
+          statusTxt.innerText = "Error";
         }
       }else{
         form.reset();
@@ -37,17 +39,6 @@ form.onsubmit = (e)=>{
         setTimeout(()=>{
           statusTxt.innerText = "Send";
         }, 3000);
-      }
-      if(response.indexOf("required") != -1){
-        statusTxt.innerText = "Error";
-      }
-      if(response.indexOf("valid") != -1){
-        statusTxt.innerText = "Error";
-      }
-      if(response.indexOf("failed") != -1){
-        statusTxt.innerText = "Error";
-      }else{
-        statusTxt.innerText = "dddnt";
       }
       form.classList.remove("disabled");
     }
