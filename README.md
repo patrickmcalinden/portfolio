@@ -7,6 +7,7 @@ For this project, I wanted to incorporate as many languages as possible. After l
 
 Before any coding took place, I made a mockup on Adobe XD. My goal was to make a clean and simple site with JS animations to make it unique.
 
+![Mockup](https://user-images.githubusercontent.com/84126348/129661396-e077064d-6c78-47c1-8ee6-9a2bfb205c5c.png)
 
 
 <h3>Building</h3>
