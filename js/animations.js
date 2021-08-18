@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 var view = gsap.timeline();
-ScrollTrigger.saveStyles(" .hero-design, .circle-design, .transition2, .transition3, .transition4");
+ScrollTrigger.saveStyles(" .hero-design, .circle-desgin, .transition2, .transition3, .transition4");
 
 view.from('.content',{
     y: '-30%',
