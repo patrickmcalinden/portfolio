@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 var view = gsap.timeline();
-
+ScrollTrigger.saveStyles(" .hero-design, .circle-design, .transition2, .transition3, .transition4");
 
 view.from('.content',{
     y: '-30%',
@@ -16,6 +16,7 @@ view.from('.stagger1',{
     duration: 2,
     ease: Power4.easeOut
 } , "-=1.5")
+
 
 ScrollTrigger.matchMedia({
     "(min-width: 1050px) and (max-width: 1524px)" : function()
@@ -37,6 +38,7 @@ ScrollTrigger.matchMedia({
            scrollTrigger: {
                trigger: 'transition2',
                start: "center center",
+               pin: true,
            },
            y: 50,
            opacity: 0,
@@ -63,6 +65,8 @@ ScrollTrigger.matchMedia({
             duration: 0.6,
             stagger: .3
          })
+         
+         
     } ,
     "(min-width: 1525px) and (max-width: 1900px)" : function()
     {
@@ -530,5 +534,6 @@ ScrollTrigger.matchMedia({
          })
          
     },
+    
 });
 
