@@ -17,4 +17,5 @@ Overall, building this website was an okay experience. I really liked seeing how
 This project has allowed me to incorporate multiple languages to produce a fully functional site and troubleshoot on the fly.
  
 <h3>Known Issues</h3>
-08/14/21 - GSAP Animations causing loaded divs to become transparent on window      resize 
+08/15/21 - GSAP Animations causing loaded divs to become transparent on window resize 
+08/17/21 * Fixed using saveStyles method as well as changing some base code around
