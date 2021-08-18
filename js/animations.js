@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 var view = gsap.timeline();
-ScrollTrigger.saveStyles(" .hero-design, .circle-desgin, .transition2, .transition3, .transition4");
+ScrollTrigger.saveStyles(".transition2, .transition3, .transition4");
 
 view.from('.content',{
     y: '-30%',
@@ -17,23 +17,25 @@ view.from('.stagger1',{
     ease: Power4.easeOut
 } , "-=1.5")
 
-
 ScrollTrigger.matchMedia({
-    "(min-width: 1050px) and (max-width: 1524px)" : function()
+    "(min-width: 1050px)" : function()
     {
-        view.from('.hero-design',{
-            y: 50,
+        gsap.from('.hero-design',{
+            y: 200,
             opacity: 0,
-            duration: 1,
+            duration: 1.5,
             ease: Power4.easeOut
         } , "-=2")
         
         gsap.from(".circle-desgin" , {
             stagger:.15,
-            scale: .1,
-            duration:1,
+            scale: .0,
+            duration:1.5,
             ease: "bounce.out",
         })
+    },
+    "(min-width: 1050px) and (max-width: 1524px)" : function()
+    {        
         gsap.from(".transition2" , {
            scrollTrigger: {
                trigger: 'transition2',
@@ -65,24 +67,9 @@ ScrollTrigger.matchMedia({
             duration: 0.6,
             stagger: .3
          })
-         
-         
     } ,
     "(min-width: 1525px) and (max-width: 1900px)" : function()
     {
-        view.from('.hero-design',{
-            y: 50,
-            opacity: 0,
-            duration: 1,
-            ease: Power4.easeOut
-        } , "-=2")
-        
-        gsap.from(".circle-desgin" , {
-            stagger:.15,
-            scale: .1,
-            duration:1,
-            ease: "bounce.out",
-        })
         gsap.from(".transition2" , {
            scrollTrigger: {
                trigger: 'transition2',
@@ -116,19 +103,6 @@ ScrollTrigger.matchMedia({
     },
     "(min-width: 1901px) and (max-width: 2200px)" : function()
     {
-        view.from('.hero-design',{
-            y: 50,
-            opacity: 0,
-            duration: 1,
-            ease: Power4.easeOut
-        } , "-=2")
-        
-        gsap.from(".circle-desgin" , {
-            stagger:.15,
-            scale: .1,
-            duration:1,
-            ease: "bounce.out",
-        })
         gsap.from(".transition2" , {
            scrollTrigger: {
                trigger: 'transition2',
@@ -162,19 +136,6 @@ ScrollTrigger.matchMedia({
     },
     "(min-width: 2201px)" : function()
     {
-        view.from('.hero-design',{
-            y: 50,
-            opacity: 0,
-            duration: 1,
-            ease: Power4.easeOut
-        } , "-=2")
-        
-        gsap.from(".circle-desgin" , {
-            stagger:.15,
-            scale: .1,
-            duration:1,
-            ease: "bounce.out",
-        })
         gsap.from(".transition2" , {
            scrollTrigger: {
                trigger: 'transition2',
@@ -208,19 +169,6 @@ ScrollTrigger.matchMedia({
     },
     "(min-width: 950px) and (max-width: 1049px)" : function()
     {
-        view.from('.hero-design',{
-            y: 50,
-            opacity: 0,
-            duration: 1,
-            ease: Power4.easeOut
-        } , "-=2")
-        
-        gsap.from(".circle-desgin" , {
-            stagger:.15,
-            scale: .1,
-            duration:1,
-            ease: "bounce.out",
-        })
         gsap.from(".transition2" , {
            scrollTrigger: {
                trigger: 'transition2',
@@ -255,19 +203,6 @@ ScrollTrigger.matchMedia({
     },
     "(min-width: 800px) and (max-width: 949px)" : function()
     {
-        view.from('.hero-design',{
-            y: 50,
-            opacity: 0,
-            duration: 1,
-            ease: Power4.easeOut
-        } , "-=2")
-        
-        gsap.from(".circle-desgin" , {
-            stagger:.15,
-            scale: .1,
-            duration:1,
-            ease: "bounce.out",
-        })
         gsap.from(".transition2" , {
            scrollTrigger: {
                trigger: 'transition2',
@@ -302,19 +237,6 @@ ScrollTrigger.matchMedia({
     },
     "(min-width: 700px) and (max-width: 799px)" : function()
     {
-        view.from('.hero-design',{
-            y: 50,
-            opacity: 0,
-            duration: 1,
-            ease: Power4.easeOut
-        } , "-=2")
-        
-        gsap.from(".circle-desgin" , {
-            stagger:.15,
-            scale: .1,
-            duration:1,
-            ease: "bounce.out",
-        })
         gsap.from(".transition2" , {
            scrollTrigger: {
                trigger: 'transition2',
@@ -349,19 +271,6 @@ ScrollTrigger.matchMedia({
     },
     "(min-width: 600px) and (max-width: 699px)" : function()
     {
-        view.from('.hero-design',{
-            y: 50,
-            opacity: 0,
-            duration: 1,
-            ease: Power4.easeOut
-        } , "-=2")
-        
-        gsap.from(".circle-desgin" , {
-            stagger:.15,
-            scale: .1,
-            duration:1,
-            ease: "bounce.out",
-        })
         gsap.from(".transition2" , {
            scrollTrigger: {
                trigger: 'transition2',
@@ -396,19 +305,6 @@ ScrollTrigger.matchMedia({
     },
     "(min-width: 500px) and (max-width: 599px)" : function()
     {
-        view.from('.hero-design',{
-            y: 50,
-            opacity: 0,
-            duration: 1,
-            ease: Power4.easeOut
-        } , "-=2")
-        
-        gsap.from(".circle-desgin" , {
-            stagger:.15,
-            scale: .1,
-            duration:1,
-            ease: "bounce.out",
-        })
         gsap.from(".transition2" , {
            scrollTrigger: {
                trigger: 'transition2',
@@ -442,19 +338,6 @@ ScrollTrigger.matchMedia({
     },
     "(min-width: 400px) and (max-width: 499px)" : function()
     {
-        view.from('.hero-design',{
-            y: 50,
-            opacity: 0,
-            duration: 1,
-            ease: Power4.easeOut
-        } , "-=2")
-        
-        gsap.from(".circle-desgin" , {
-            stagger:.15,
-            scale: .1,
-            duration:1,
-            ease: "bounce.out",
-        })
         gsap.from(".transition2" , {
            scrollTrigger: {
                trigger: 'transition2',
@@ -488,19 +371,6 @@ ScrollTrigger.matchMedia({
     },
     "(min-width: 300px) and (max-width: 399px)" : function()
     {
-        view.from('.hero-design',{
-            y: 50,
-            opacity: 0,
-            duration: 1,
-            ease: Power4.easeOut
-        } , "-=2")
-        
-        gsap.from(".circle-desgin" , {
-            stagger:.15,
-            scale: .1,
-            duration:1,
-            ease: "bounce.out",
-        })
         gsap.from(".transition2" , {
            scrollTrigger: {
                trigger: 'transition2',
