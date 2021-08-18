@@ -18,4 +18,5 @@ This project has allowed me to incorporate multiple languages to produce a fully
  
 <h3>Known Issues</h3>
 08/15/21 - GSAP Animations causing loaded divs to become transparent on window resize 
+ 
 08/17/21 * Fixed using saveStyles method as well as changing some base code around
