@@ -16,7 +16,12 @@ view.from('.stagger1',{
     duration: 2,
     ease: Power4.easeOut
 } , "-=1.5")
-
+gsap.from(".circle-desgin" , {
+    stagger:.15,
+    scale: .1,
+    duration:1,
+    ease: "bounce.out",
+})
 
 ScrollTrigger.matchMedia({
     "(min-width: 1050px) and (max-width: 1524px)" : function()
